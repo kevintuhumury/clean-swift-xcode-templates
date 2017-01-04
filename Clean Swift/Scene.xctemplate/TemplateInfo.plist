@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>DefaultCompletionName</key>
+    <string>MyScene</string>
+    <key>Description</key>
+    <string>This generates a new Scene using Clean Swift based on Uncle Bob&apos;s Clean Architecture. It consists of the ViewController, Interactor, Presenter and Router. You can then create individual Workers to supplement the Interactor.</string>
+    <key>Kind</key>
+    <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+    <key>Options</key>
+    <array>
+      <dict>
+        <key>Description</key>
+        <string>The name of the Scene to create</string>
+        <key>Identifier</key>
+        <string>sceneName</string>
+        <key>Name</key>
+        <string>New Scene Name:</string>
+        <key>NotPersisted</key>
+        <true/>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>text</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>___VARIABLE_sceneName:identifier___</string>
+        <key>Identifier</key>
+        <string>productName</string>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>Configurator/___VARIABLE_sceneName:identifier___Configurator</string>
+        <key>Description</key>
+        <string>The name of the Configurator</string>
+        <key>Identifier</key>
+        <string>configuratorName</string>
+        <key>Name</key>
+        <string>Configurator Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+
+      <dict>
+        <key>Default</key>
+        <string>Interactor/___VARIABLE_sceneName:identifier___Interactor</string>
+        <key>Description</key>
+        <string>The name of the Interactor</string>
+        <key>Identifier</key>
+        <string>interactorName</string>
+        <key>Name</key>
+        <string>Interactor Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>Interactor/___VARIABLE_sceneName:identifier___Worker</string>
+        <key>Description</key>
+        <string>The name of the Worker</string>
+        <key>Identifier</key>
+        <string>workerName</string>
+        <key>Name</key>
+        <string>Worker Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>Models/___VARIABLE_sceneName:identifier___Models</string>
+        <key>Description</key>
+        <string>The name of the Model file</string>
+        <key>Identifier</key>
+        <string>modelFileName</string>
+        <key>Name</key>
+        <string>Model File Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>Presenter/___VARIABLE_sceneName:identifier___Presenter</string>
+        <key>Description</key>
+        <string>The name of the Presenter</string>
+        <key>Identifier</key>
+        <string>presenterName</string>
+        <key>Name</key>
+        <string>Presenter Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>Protocols/___VARIABLE_sceneName:identifier___Protocols</string>
+        <key>Description</key>
+        <string>The name of the Protocols file</string>
+        <key>Identifier</key>
+        <string>protocolsFileName</string>
+        <key>Name</key>
+        <string>Protocols File Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>Router/___VARIABLE_sceneName:identifier___Router</string>
+        <key>Description</key>
+        <string>The name of the Router</string>
+        <key>Identifier</key>
+        <string>routerName</string>
+        <key>Name</key>
+        <string>Router Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>View/___VARIABLE_sceneName:identifier___ViewController</string>
+        <key>Description</key>
+        <string>The name of the ViewController</string>
+        <key>Identifier</key>
+        <string>viewControllerName</string>
+        <key>Name</key>
+        <string>View Controller Name:</string>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>static</string>
+      </dict>
+      <dict>
+        <key>Default</key>
+        <string>UIViewController</string>
+        <key>Description</key>
+        <string>The type of ViewController to subclass from for the new Scene</string>
+        <key>FallbackHeader</key>
+        <string>import UIKit</string>
+        <key>Identifier</key>
+        <string>viewControllerSubclass</string>
+        <key>Name</key>
+        <string>Subclass of:</string>
+        <key>NotPersisted</key>
+        <true/>
+        <key>Required</key>
+        <true/>
+        <key>Type</key>
+        <string>class</string>
+        <key>Values</key>
+        <array>
+          <string>UIViewController</string>
+          <string>UITableViewController</string>
+          <string>UICollectionViewController</string>
+        </array>
+      </dict>
+    </array>
+    <key>Platforms</key>
+    <array>
+      <string>com.apple.platform.iphoneos</string>
+    </array>
+    <key>SortOrder</key>
+    <string>9</string>
+    <key>Summary</key>
+    <string>This generates a new Scene using Clean Swift based on Uncle Bob&apos;s Clean Architecture.</string>
+  </dict>
+</plist>
